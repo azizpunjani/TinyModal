@@ -1,9 +1,7 @@
-tinyModal
-=========
+tinyModal( width, height, elements )
+====================================
 
-// tinyModal( width, height, elements )
+    var pElement = document.createElement( 'p' );
+    pElement.textContent = 'Hello world!';
 
-var pElement = document.createElement( 'p' );
-pElement.textContent = 'Hello world!';
-
-tinyModal( 400, 300, pElement );
+    tinyModal( 400, 300, pElement );

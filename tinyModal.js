@@ -45,7 +45,7 @@ window.tinyModal = function( width, height, elements ) {
 
   // Create the modal box
   var box = document.createElement( 'div' );
-  box.setAttribute( 'id', 'tiny_modal_box' );
+  box.setAttribute( 'id', 'TinyModalBox' );
   box.style['background-color'] = '#fff';
   box.style['height'] = height + 'px';
   box.style['left'] = '50%';
@@ -57,14 +57,12 @@ window.tinyModal = function( width, height, elements ) {
   box.style['z-index'] = 101;
 
   // Populate the modal box
-  if( elements instanceof Array === false ) elements = [ elements ];
-  for( var i = 0, l = elements.length; i < l; i++ )
+  if ( elements instanceof Array === false ) elements = [ elements ];
+  for ( var i = 0, l = elements.length; i < l; i++ )
     box.appendChild( elements[i] );
 
   // Replace or append the new modal box
-  if( 'box' in tm ) document.body.replaceChild( box, tm.box );
+  if ( 'box' in tm ) document.body.replaceChild( box, tm.box );
   else document.body.appendChild( box );
   tm.box = box;
 };
-
-// =============================================================================

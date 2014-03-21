@@ -1,7 +1,12 @@
-tinyModal( width, height, elements )
+TinyModal.open( width, height, elements )
+TinyModal.close()
 ------------------------------------
 
     var pElement = document.createElement( 'p' );
     pElement.textContent = 'Hello world!';
 
-    tinyModal( 400, 300, pElement );
+    TinyModal.open( 400, 300, pElement );
+
+    // Do some other things
+
+    TinyModal.close();

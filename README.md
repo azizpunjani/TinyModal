@@ -1,12 +1,14 @@
-TinyModal.open( width, height, elements )
-TinyModal.close()
-------------------------------------
+TinyModal.open(width, height, elements)
+-----------------------------------------
 
-    var pElement = document.createElement( 'p' );
+TinyModal.close()
+-----------------
+
+    var pElement = document.createElement('p');
     pElement.textContent = 'Hello world!';
 
-    TinyModal.open( 400, 300, pElement );
+    // Open modal with <p> content
+    TinyModal.open(400, 300, pElement);
 
-    // Do some other things
-
+    // Close the modal
     TinyModal.close();
